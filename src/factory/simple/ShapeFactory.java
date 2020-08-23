@@ -17,10 +17,20 @@ public class ShapeFactory {
         return null;
     }
 
-    public Object getShape(Class<? extends Shape> clazz) {
+    public Object getShapeObject(Class<? extends Shape> clazz) {
         Object instance = null;
         try {
             instance = Class.forName(clazz.getName()).newInstance();
+        } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return instance;
+    }
+
+    public <T> T getShape(Class<? extends Shape> clazz) {
+        T instance = null;
+        try {
+            instance = (T) Class.forName(clazz.getName()).newInstance();
         } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
             e.printStackTrace();
         }
