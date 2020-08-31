@@ -1,4 +1,4 @@
-package factory.method;
+package design_pattern.factory.method;
 
 public class CattleFarm implements AnimalFarm {
     @Override

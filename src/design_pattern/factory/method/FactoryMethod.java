@@ -1,4 +1,4 @@
-package factory.method;
+package design_pattern.factory.method;
 
 public class FactoryMethod {
     public static void main(String[] args) {

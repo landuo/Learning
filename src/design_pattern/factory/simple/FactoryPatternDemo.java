@@ -1,4 +1,4 @@
-package factory.simple;
+package design_pattern.factory.simple;
 
 public class FactoryPatternDemo {
     public static void main(String[] args) {

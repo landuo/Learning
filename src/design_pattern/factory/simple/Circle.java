@@ -1,4 +1,4 @@
-package factory.simple;
+package design_pattern.factory.simple;
 
 public class Circle implements Shape {
     @Override
