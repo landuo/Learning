@@ -1,6 +1,6 @@
 package design_pattern.factory.method;
 
-public class FactoryMethod {
+public class FactoryMethodDemo {
     public static void main(String[] args) {
         AnimalFarm cattleFarm = new CattleFarm();
         Animal cattle = cattleFarm.newAnimal();
